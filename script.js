@@ -34,18 +34,22 @@ setTimeout(function() {
     document.getElementById('line4').innerHTML = `
     <p class="tab"><a id="one" href="#">Weather App</a><br>
     <a id="two" href="#">Contact Us/Form Validation</a><br>
-    <a id="three" href="#">Exchange Rate App</a><br></p>`
+    <a id="three" href="#">Exchange Rate App</a><br>
+    <a id="four" href="#">Clock/Stopwatch</a><br></p>`
 
     //Modal
     const one = document.getElementById('one');
     const two = document.getElementById('two');
     const three = document.getElementById('three');
+    const four = document.getElementById('four');
     const modal_container1 = document.getElementById('modal_container1');
     const modal_container2 = document.getElementById('modal_container2');
     const modal_container3 = document.getElementById('modal_container3');
+    const modal_container4 = document.getElementById('modal_container4');
     const close = document.getElementById('close');
     const close2 = document.getElementById('close2');
     const close3 = document.getElementById('close3');
+    const close4 = document.getElementById('close4');
 
     one.addEventListener('click', () => {
         modal_container1.classList.add('show');
@@ -59,6 +63,10 @@ setTimeout(function() {
         modal_container3.classList.add('show');
     });
     
+    four.addEventListener('click', () => {
+        modal_container4.classList.add('show');
+    });
+    
     close.addEventListener('click', () => {
         modal_container1.classList.remove('show');
     }); 
@@ -69,6 +77,10 @@ setTimeout(function() {
 
     close3.addEventListener('click', () => {
         modal_container3.classList.remove('show');
+    });
+
+    close4.addEventListener('click', () => {
+        modal_container4.classList.remove('show');
     });
 }, 2600);
 
