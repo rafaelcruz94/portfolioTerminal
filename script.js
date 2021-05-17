@@ -32,10 +32,10 @@ document.getElementById('line3').innerHTML = `
           
 setTimeout(function() {
     document.getElementById('line4').innerHTML = `
-    <p class="tab"><a id="one" href="#">Weather App</a><br>
-    <a id="two" href="#">Contact Us/Form Validation</a><br>
+    <p class="tab"><a id="two" href="#">Contact Us/Form Validation</a><br>
     <a id="three" href="#">Exchange Rate App</a><br>
-    <a id="four" href="#">Clock/Stopwatch</a><br></p>`
+    <a id="four" href="#">Clock/Stopwatch</a><br>
+    <a id="one" href="#">Weather App</a><br></p>`
 
     //Modal
     const one = document.getElementById('one');
