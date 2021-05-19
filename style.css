@@ -1,288 +1,295 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html{
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden; 
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-body{
-    background-color: rgb(31,31,31);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.container{
-    background-color: rgb(1,36,86);
-    width: 80%;
-    height: 60%;
-    border: 1px solid rgb(0,0,0);
-    border-top-width: 24px;
-    box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.1);
-    position: relative;
-    color: whitesmoke;
+.container {
+  background-color: rgb(1, 36, 86);
+  width: 80%;
+  height: 60%;
+  border: 1px solid rgb(0, 0, 0);
+  border-top-width: 24px;
+  box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.1);
+  position: relative;
+  color: whitesmoke;
 }
 
-.left img{
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    width: 1.2em;
-    height: 1.2em;  
-    top: -21.5px;
-    left: 4px;
-    outline: none;
+.left img {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 1.2em;
+  height: 1.2em;
+  top: -21.5px;
+  left: 4px;
+  outline: none;
 }
 
-.left p{
-    position: absolute;
-    top: -17.5px;
-    left: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.7rem;
-    color: whitesmoke;
+.left p {
+  position: absolute;
+  top: -17.5px;
+  left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  color: whitesmoke;
 }
 
-nav{
-    display: inline-flex;
-    flex-direction: row;
-    position: absolute;
-    top: -23px;
-    right: 0;
-    outline: none;
+nav {
+  display: inline-flex;
+  flex-direction: row;
+  position: absolute;
+  top: -23px;
+  right: 0;
+  outline: none;
 }
 
-.navbar button{
-    background-color: transparent;
-    border: none;
-    color: whitesmoke;
-    font-size: 1em;
-    width: 35px;
+.navbar button {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-size: 1em;
+  width: 35px;
 }
 
-button{
-    cursor: pointer;
-    outline: none;
+button {
+  cursor: pointer;
+  outline: none;
 }
 
-.close{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    z-index: 100;
-    width: 12em;
-    height: 6em;
-    background-color: #eeeeee;
-    text-align: center;
-    border-color: rgb(0,0,0);
-    border-width: 5px;
-    border-style: solid;
-    border-top-width: 20px;
-    position: absolute;
-    margin: auto auto;
+.close {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  z-index: 100;
+  width: 12em;
+  height: 6em;
+  background-color: #eeeeee;
+  text-align: center;
+  border-color: rgb(0, 0, 0);
+  border-width: 5px;
+  border-style: solid;
+  border-top-width: 20px;
+  position: absolute;
+  margin: auto auto;
 }
 
-.close p{
-    font-size: 0.9rem;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    color: black;
+.close p {
+  font-size: 0.9rem;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  color: black;
 }
 
-#yes, #no{
-    border-color: #222831;
-    border-radius: 3px;
+#yes,
+#no {
+  border-color: #222831;
+  border-radius: 3px;
 }
 
-#yes{
-    margin-right: 0.5em;
+#yes {
+  margin-right: 0.5em;
 }
 
-#bt4{
-    position: absolute;
-    top: -19px;
-    width: 1.5em;
-    right: -4px;
-    border: none;
-    background-color: transparent;
-    color:whitesmoke;
+#bt4 {
+  position: absolute;
+  top: -19px;
+  width: 1.5em;
+  right: -4px;
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
 }
 
-.enableBlur{
-    filter: blur(2px);
-}
-  
-.disableBlur{
-    filter: blur(0);
+.enableBlur {
+  filter: blur(2px);
 }
 
-.content{
-    font-size: 0.8rem;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 1em;
-    margin-left: 0.5em;
+.disableBlur {
+  filter: blur(0);
+}
+
+.content {
+  font-size: 0.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 1em;
+  margin-left: 0.5em;
 }
 
 /*Buttons effects*/
-button:hover{
-    background-color: rgb(41, 41, 41);
+button:hover {
+  background-color: rgb(41, 41, 41);
 }
 
-#bt3:hover{
-    filter: brightness(100%);
-    background-color: rgba(255, 0, 0, 0.5);
+#bt3:hover {
+  filter: brightness(100%);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
-#bt4:hover{
-    filter: brightness(100%);
-    background-color: rgba(255, 0, 0, 0.5);
+#bt4:hover {
+  filter: brightness(100%);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
-button:focus{
-    outline: none;
+button:focus {
+  outline: none;
 }
 
 button:active {
   transform: translateY(1px);
 }
 
-#yes:hover, #no:hover{
-    filter: brightness(89%); 
-    background-color: #8785a2; 
+#yes:hover,
+#no:hover {
+  filter: brightness(89%);
+  background-color: #8785a2;
 }
 
-.align{
-    display: inline-flex;
-    flex-direction: row;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-  
-p{
-    white-space: nowrap;
-    overflow: hidden;
-    color: whitesmoke;
+.align {
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.tab{
-    margin-left: 1em;
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  color: whitesmoke;
 }
-  
+
+.tab {
+  margin-left: 1em;
+}
+
 /* Animation */
 #delay1 {
-    animation: typing 1s steps(30, end);
+  animation: typing 1s steps(30, end);
 }
-  
-span{
-    animation: 1s blink step-end infinite;
+
+span {
+  animation: 1s blink step-end infinite;
 }
-  
+
 /* text animation */
-  
-@keyframes typing{
-    from { width: 0 }
-    to { width: 50% }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
 }
-  
+
 /* The typewriter cursor effect */
-@keyframes blink{
-    from, to {
-      color: transparent;
-    }
-    50% {
-      color: whitesmoke;
-    }
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: whitesmoke;
+  }
 }
 
 /* Modal */
-a{
-    cursor: pointer;
-    color: yellow;
+a {
+  cursor: pointer;
+  color: yellow;
 }
 
-.modal-container{
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    position: fixed;
-    z-index: 1;
-    padding-top: 1.5em; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9); 
+.modal-container {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1.5em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal-container img{
-    margin: auto;
-    margin-top: 2.5em;
-    display: block;
-    width: 70%;
-    height: 70%;
+.modal-container img {
+  margin: auto;
+  margin-top: 2.5em;
+  display: block;
+  width: 70%;
+  height: 70%;
 }
 
-.modal-container p{
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+.modal-container p {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
-.modal-container.show{
-    opacity: 1;
-    pointer-events: auto;
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
 }
-
 
 /* The Close Button */
 .closeModal {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .closeModal:hover,
 .closeModal:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Media Query */
 
-@media screen and (min-width: 720px){
-    .container{
-        width: 40%;
-        height: 60%;
-    }
+@media screen and (min-width: 720px) {
+  .container {
+    width: 40%;
+    height: 60%;
+  }
 }
 
-@media screen and (min-width: 720px) and (min-height: 1024px){
-    .container{
-        width: 50%;
-        height: 50%;
-    }
+@media screen and (min-width: 720px) and (min-height: 1024px) {
+  .container {
+    width: 50%;
+    height: 50%;
+  }
 }
 
-@media screen and (min-width: 1024px) and (min-height: 1366px){
-    .container{
-        width: 50%;
-        height: 50%;
-    }
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .container {
+    width: 50%;
+    height: 50%;
+  }
 }
