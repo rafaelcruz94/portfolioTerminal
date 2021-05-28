@@ -214,7 +214,7 @@ a {
 }
 
 .modal-container {
-  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity 0.3s ease;
   position: fixed;
@@ -249,7 +249,7 @@ a {
 }
 
 .modal-container.show {
-  opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
